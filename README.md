@@ -4,6 +4,8 @@ HamsterTask
 Http server with using Netty framework
 
 
+Task:
+
 Необходимо реализовать http-сервер на фреймворке netty
 (http://netty.io/), со следующим функционалом:
 
