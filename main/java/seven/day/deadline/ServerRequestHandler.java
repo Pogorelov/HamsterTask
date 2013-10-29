@@ -10,7 +10,6 @@ import io.netty.handler.codec.http.DefaultFullHttpResponse;
 import io.netty.handler.codec.http.FullHttpResponse;
 import io.netty.handler.codec.http.HttpHeaders;
 import io.netty.handler.codec.http.HttpResponseStatus;
-import io.netty.handler.codec.http.HttpVersion;
 import io.netty.util.CharsetUtil;
 
 
@@ -54,7 +53,7 @@ public class ServerRequestHandler {
 	
 	//The method which provides an answer to the Hello world query
 	private FullHttpResponse valueHelloWorld() throws InterruptedException {
-		String hello = "<head><font size=\"5\">Hello HamsterCoders!</font></head>";
+		String hello = "<head><font size=\"5\">Hello world!</font></head>";
 		FullHttpResponse value = new DefaultFullHttpResponse(HTTP_1_1, OK,
 				Unpooled.copiedBuffer(hello, CharsetUtil.US_ASCII));
 		Thread.sleep(DELAY * 1000);
