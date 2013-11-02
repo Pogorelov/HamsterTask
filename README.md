@@ -1,4 +1,4 @@
-HamsterTask
+NettyServer
 ===========
 
 Http server with using Netty framework
